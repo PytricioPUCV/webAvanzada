@@ -13,7 +13,7 @@ resource "terraform_data" "deploy_frontend" {
   }
 
   provisioner "local-exec" {
-    command = "rm -rf ../staging && mkdir -p ../staging && cp -r ../frontend/dist/frontend/browser/. ../staging/"
+    command = "rm -rf ../staging && mkdir -p ../staging && cp -r ../frontend/dist/frontend/. ../staging/"
   }
 }
 
