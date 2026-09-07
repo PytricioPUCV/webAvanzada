@@ -1,15 +1,15 @@
 import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component'; 
+import { AppComponent } from './app.component';
 
-describe('AppComponent', () => { 
+describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent] 
+      imports: [AppComponent]
     }).compileComponents();
   });
 
   it('debe crear la aplicación', () => {
-    const fixture = TestBed.createComponent(AppComponent); 
+    const fixture = TestBed.createComponent(AppComponent);
     expect(fixture.componentInstance).toBeTruthy();
   });
 
@@ -21,5 +21,3 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain('Catálogo de Recursos');
   });
 });
-
-//Update
